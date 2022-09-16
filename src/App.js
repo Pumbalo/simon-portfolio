@@ -6,7 +6,7 @@ import Experience from "./pages/Experience";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/simon-portfolio">
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
