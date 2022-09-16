@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import portrait from "./about_portrait.png";
+import portrait from "./about_portrait.JPG";
 
 function About() {
   return (

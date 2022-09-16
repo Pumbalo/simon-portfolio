@@ -38,3 +38,9 @@
 hr {
   width: 50%;
 }
+
+@media only screen and (max-width: 700px) {
+  .content_wrapper {
+    width: 100%;
+  }
+}
