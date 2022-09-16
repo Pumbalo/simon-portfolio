@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://pumbalo.github.io/portfolio",
+  "name": "simon-portfolio",
+  "homepage": "https://pumbalo.github.io/simon-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
