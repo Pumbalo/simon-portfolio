@@ -11,14 +11,7 @@ function Hero() {
           <br />
           Web Developer
         </h1>
-        <button
-          onClick={(event) =>
-            (window.location.href = "/simon-portfolio/contact")
-          }
-          className={styles.btn}
-        >
-          Contact Me
-        </button>
+        <button className={styles.btn}>Contact Me</button>
       </div>
       <img src={portrait} alt="Portrait" className={styles.portrait} />
     </div>
