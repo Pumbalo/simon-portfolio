@@ -1,0 +1,98 @@
+.title {
+  font-size: 4rem;
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+  float: right;
+}
+
+.title::before {
+  content: "<h1>";
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+  font-size: 1.5rem;
+  opacity: 0.15;
+  font-weight: 400;
+}
+.title::after {
+  content: "</h1>";
+  position: absolute;
+  left: -2rem;
+  bottom: -2rem;
+  font-size: 1.5rem;
+  opacity: 0.15;
+  font-weight: 400;
+}
+
+.wrapper {
+  padding: 3rem;
+}
+.content_wrapper {
+  margin-top: 20rem;
+  margin-right: 10rem;
+}
+
+.card {
+  background: #373737;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2), 0 22px 35 rgba(0, 0, 0, 0.14),
+    0 8px 42px rgba(0, 0, 0, 0.12);
+  max-width: 650px;
+  max-height: 600px;
+  margin-left: 20rem;
+  margin-top: 15rem;
+  z-index: 2;
+}
+
+.card p {
+  font-size: 1.5rem;
+  padding: 3rem 4rem;
+}
+
+.content_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.portrait {
+  position: absolute;
+  left: 20rem;
+  top: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .portrait {
+    display: none;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .content_wrapper {
+    margin: 0;
+  }
+
+  .card {
+    margin-left: 5rem;
+  }
+  .card p {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card p {
+    padding: 1rem 2rem;
+  }
+  .card {
+    margin: 0;
+  }
+}

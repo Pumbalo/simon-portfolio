@@ -1,0 +1,204 @@
+.content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.card {
+  width: 70%;
+  height: 80%;
+  background: #373737;
+  border-radius: 25px;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2), 0 22px 35px rgba(0, 0, 0, 0.14),
+    0 8px 42px rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #f368e0 0%, #ef39d6 50%, #cc11b2 100%);
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-top: 3rem;
+}
+
+.sub_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cirlce_big {
+  width: 250px;
+  height: 250px;
+  background: #68f37b;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+}
+.cirlce_small {
+  width: 150px;
+  height: 150px;
+  background: #3ed052;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.form_wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 60px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    "."
+    ".";
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.input_box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  top: -3rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid #606060;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  caret-color: #fff;
+}
+
+.input_box:focus {
+  border-bottom: 2px solid #f368e0;
+  caret-color: #f368e0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+label {
+  display: inline-block;
+  width: 40%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.required {
+  color: #ef5050;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .form_wrapper {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .left {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #f368e0 0%, #ef39d6 50%, #cc11b2 100%);
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-top: 0.5rem;
+  }
+  .sub_title {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    margin: 0;
+    font-weight: 400;
+    z-index: 4 !important;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
+
+.btn {
+  outline: none;
+  background: linear-gradient(to right, transparent 50%, #f3689b 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  border: 2px solid #f3689b;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 4rem;
+}
+
+.btn:hover {
+  background-position: -100% 0;
+}
