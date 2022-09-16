@@ -58,10 +58,30 @@
   justify-content: center;
   font-size: 28px;
   font-weight: 400;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+}
+
+.item:nth-child(1) {
+  background: url("./tradgardar.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 700px) {
   .content_wrapper {
     margin: 0;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
