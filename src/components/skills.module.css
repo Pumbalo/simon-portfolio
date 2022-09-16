@@ -180,7 +180,6 @@
     margin: 0;
   }
   .tooltip {
-    left: 0;
-    width: 120%;
+    display: none;
   }
 }

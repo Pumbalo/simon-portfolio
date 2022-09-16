@@ -42,7 +42,7 @@
   box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2), 0 22px 35 rgba(0, 0, 0, 0.14),
     0 8px 42px rgba(0, 0, 0, 0.12);
   max-width: 650px;
-  max-height: 600px;
+  max-height: 100%;
   margin-left: 20rem;
   margin-top: 15rem;
   z-index: 2;
